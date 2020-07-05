@@ -1,0 +1,12 @@
+#!/bin/bash
+# This simple script run programs automatically and show the result
+# Compile and run C files
+if [[ $1 == *.c ]]; then
+clear
+cc $1 && ./a.out
+rm a.out
+# Run python files
+elif [[ $1 == *.py ]]; then
+clear
+python3 $1
+fi
